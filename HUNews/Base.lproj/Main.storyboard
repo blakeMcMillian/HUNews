@@ -32,12 +32,15 @@
                                     <constraint firstAttribute="height" constant="20" id="DhI-LN-NMh"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IhV-3e-M1V" userLabel="TableViewContainer">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhV-3e-M1V" userLabel="TableViewContainer">
                                 <rect key="frame" x="0.0" y="319" width="600" height="600"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="179" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hu0-kg-22f">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="179" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hu0-kg-22f">
                                         <rect key="frame" x="0.0" y="6" width="591" height="594"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="594" id="n1k-ft-wl1"/>
+                                        </constraints>
                                         <prototypes>
                                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ATMaterialTableCell" rowHeight="179" id="V0W-nW-1KG">
                                                 <autoresizingMask key="autoresizingMask"/>
@@ -64,6 +67,12 @@
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="hu0-kg-22f" firstAttribute="leading" secondItem="IhV-3e-M1V" secondAttribute="leading" id="7QC-7j-VlH"/>
+                                    <constraint firstAttribute="height" constant="600" id="AEJ-Yu-vdA"/>
+                                    <constraint firstAttribute="trailing" secondItem="hu0-kg-22f" secondAttribute="trailing" constant="9" id="Jab-Xb-cDs"/>
+                                    <constraint firstItem="hu0-kg-22f" firstAttribute="top" secondItem="IhV-3e-M1V" secondAttribute="top" constant="6" id="ZtW-Jj-5b1"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -71,8 +80,11 @@
                             <constraint firstAttribute="centerX" secondItem="ilO-fJ-Bpf" secondAttribute="centerX" constant="2.5" id="0bZ-Ar-JfX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BYu-xv-Yt7" secondAttribute="trailing" constant="-26" id="9QU-gS-PgL"/>
                             <constraint firstItem="ilO-fJ-Bpf" firstAttribute="top" secondItem="BYu-xv-Yt7" secondAttribute="bottom" id="Cnb-4H-Y6W"/>
+                            <constraint firstItem="IhV-3e-M1V" firstAttribute="top" secondItem="ilO-fJ-Bpf" secondAttribute="bottom" constant="-1" id="Cqd-J3-ycJ"/>
                             <constraint firstItem="BYu-xv-Yt7" firstAttribute="top" secondItem="ZZK-WK-PM3" secondAttribute="bottom" constant="-20" id="D8u-Bg-d4i"/>
                             <constraint firstItem="BYu-xv-Yt7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-26" id="VQU-TX-zma"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IhV-3e-M1V" secondAttribute="trailing" constant="-16" id="atZ-eb-L7j"/>
+                            <constraint firstItem="IhV-3e-M1V" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="nhF-pW-VWb"/>
                         </constraints>
                     </view>
                     <connections>
