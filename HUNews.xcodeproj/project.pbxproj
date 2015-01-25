@@ -30,6 +30,11 @@
 		81E0C9B31A74687E00B0C04B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E0C9B21A74687E00B0C04B /* SystemConfiguration.framework */; };
 		81E0C9B51A74688600B0C04B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E0C9B41A74688600B0C04B /* libz.dylib */; };
 		81E0C9B81A74693900B0C04B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E0C9B71A74693900B0C04B /* RootViewController.m */; };
+		81E0C9C61A748A1B00B0C04B /* PCHUNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E0C9C51A748A1B00B0C04B /* PCHUNews.m */; };
+		81E0C9D51A74997700B0C04B /* aTMaterialCells.png in Resources */ = {isa = PBXBuildFile; fileRef = 81E0C9D21A74997700B0C04B /* aTMaterialCells.png */; };
+		81E0C9D61A74997700B0C04B /* aTMaterialCells@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81E0C9D31A74997700B0C04B /* aTMaterialCells@2x.png */; };
+		81E0C9D71A74997700B0C04B /* aTMaterialCells@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81E0C9D41A74997700B0C04B /* aTMaterialCells@3x.png */; };
+		81E0C9DA1A749A9200B0C04B /* DefaultBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81E0C9D91A749A9200B0C04B /* DefaultBackground.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +77,12 @@
 		81E0C9B41A74688600B0C04B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		81E0C9B61A74693900B0C04B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		81E0C9B71A74693900B0C04B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		81E0C9C41A748A1B00B0C04B /* PCHUNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHUNews.h; sourceTree = "<group>"; };
+		81E0C9C51A748A1B00B0C04B /* PCHUNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCHUNews.m; sourceTree = "<group>"; };
+		81E0C9D21A74997700B0C04B /* aTMaterialCells.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aTMaterialCells.png; sourceTree = "<group>"; };
+		81E0C9D31A74997700B0C04B /* aTMaterialCells@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aTMaterialCells@2x.png"; sourceTree = "<group>"; };
+		81E0C9D41A74997700B0C04B /* aTMaterialCells@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aTMaterialCells@3x.png"; sourceTree = "<group>"; };
+		81E0C9D91A749A9200B0C04B /* DefaultBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DefaultBackground.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +141,8 @@
 		81E0C9691A74622700B0C04B /* HUNews */ = {
 			isa = PBXGroup;
 			children = (
+				81E0C9D81A749A8400B0C04B /* Assets */,
+				81E0C9C01A74817F00B0C04B /* PaintCode */,
 				81E0C9911A74625B00B0C04B /* Interface */,
 				81E0C9901A74622D00B0C04B /* AppDelegate */,
 				81E0C9771A74622700B0C04B /* Images.xcassets */,
@@ -216,6 +229,50 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		81E0C9C01A74817F00B0C04B /* PaintCode */ = {
+			isa = PBXGroup;
+			children = (
+				81E0C9CC1A7490E400B0C04B /* Assets */,
+				81E0C9C71A748A4E00B0C04B /* PCModels */,
+				81E0C9C11A74818800B0C04B /* Source */,
+			);
+			name = PaintCode;
+			sourceTree = "<group>";
+		};
+		81E0C9C11A74818800B0C04B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				81E0C9C41A748A1B00B0C04B /* PCHUNews.h */,
+				81E0C9C51A748A1B00B0C04B /* PCHUNews.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		81E0C9C71A748A4E00B0C04B /* PCModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PCModels;
+			sourceTree = "<group>";
+		};
+		81E0C9CC1A7490E400B0C04B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				81E0C9D21A74997700B0C04B /* aTMaterialCells.png */,
+				81E0C9D31A74997700B0C04B /* aTMaterialCells@2x.png */,
+				81E0C9D41A74997700B0C04B /* aTMaterialCells@3x.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		81E0C9D81A749A8400B0C04B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				81E0C9D91A749A9200B0C04B /* DefaultBackground.jpg */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -296,6 +353,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E0C9D61A74997700B0C04B /* aTMaterialCells@2x.png in Resources */,
+				81E0C9DA1A749A9200B0C04B /* DefaultBackground.jpg in Resources */,
+				81E0C9D51A74997700B0C04B /* aTMaterialCells.png in Resources */,
+				81E0C9D71A74997700B0C04B /* aTMaterialCells@3x.png in Resources */,
 				81E0C9761A74622700B0C04B /* Main.storyboard in Resources */,
 				81E0C97B1A74622700B0C04B /* LaunchScreen.xib in Resources */,
 				81E0C9781A74622700B0C04B /* Images.xcassets in Resources */,
@@ -318,6 +379,7 @@
 			files = (
 				81E0C9701A74622700B0C04B /* AppDelegate.m in Sources */,
 				81E0C96D1A74622700B0C04B /* main.m in Sources */,
+				81E0C9C61A748A1B00B0C04B /* PCHUNews.m in Sources */,
 				81E0C9B81A74693900B0C04B /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +579,7 @@
 				81E0C98C1A74622700B0C04B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81E0C98D1A74622700B0C04B /* Build configuration list for PBXNativeTarget "HUNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +588,7 @@
 				81E0C98F1A74622700B0C04B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
